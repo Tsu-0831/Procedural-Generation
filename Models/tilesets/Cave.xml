@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<set unique="True">
+	<tiles>
+		<tile name="road" symmetry="T"/>
+		<tile name ="wall" symmetry="L"/>
+		<tile name ="background"/>
+	</tiles>
+
+	<neighbors>
+	</neighbors>
+</set>

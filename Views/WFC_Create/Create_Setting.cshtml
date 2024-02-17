@@ -1,0 +1,42 @@
+﻿@model IEnumerable<WebApp.Models.Table>
+
+@{
+    ViewBag.Title = "Movie List";
+}
+
+@* 生成する所 *@
+
+<head>
+    <style>
+        .indented-container {
+            margin-left: 20px; /* インデントの量を調整 */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>生成設定</h2>
+
+    <form action="/WFC_Create/Create" method="post">
+        <input type="radio" name="Radio" value="Village" />町 <br />
+        <div class="indented-container" name="Village_Setting">
+            <h4><b>囲いの種類</b></h4>
+            <input type="radio" name="VillageFrame" value="GrassFrame" checked />垣根 <br />
+            <input type="radio" name="VillageFrame" value="RockFrame" />柵 <br />
+
+
+            <h4><b>町の雰囲気</b></h4>
+            <input type="radio" name="VillageMood" value="ForestVillage" checked />村 <br />
+            <input type="radio" name="VillageMood" value="CastleTown" />城下町 <br />
+        </div>
+
+        <input type="radio" name="Radio" value="Cave" />洞窟 <br />
+        <div class="indented-container" name="Cave_Setting">
+            <h4><b>地面・壁の岩の色</b></h4>
+            <input type="radio" name="CaveColor" value="Gray" checked/>灰色 <br />
+            <input type="radio" name="CaveColor" value="Brown" />茶色 <br />
+        </div>
+
+        <input type="submit" value="試してみる">
+    </form>
+</body>

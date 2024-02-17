@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<samples>
+	<BSPtiled name="Village" N="3" symmetry="2" size="36" periodic="True" limit="120"/>
+	<Cellulartiled name="Cave" N="3" symmetry="2" size="36" periodic="True" limit="120"/>
+</samples>
